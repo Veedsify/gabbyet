@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\AuthController;
 use Illuminate\Support\Facades\Route;
+use Illuminate\Support\Facades\Log;
 
 
 /*
@@ -16,10 +17,12 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
+    $name = "John Doe";
+    session(['name' => $name]);
     return view('index');
 })->name("home");
 
-Route::get('/about', function(){
+Route::get('/about', function(){    
     return view('about');
 })->name("about");
 

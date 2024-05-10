@@ -4,7 +4,9 @@
     <div class="container d-flex gap-5 mt-5 object-fit-cover ">
         <img src="{{ asset('/images/image_2.jpg') }}" class="w-50" alt="">
         <div class="d-flex">
-            @if (session('success'))
+            <form action="{{route('login.new')}}" class="ml-auto mt-5" method="POST">
+                @csrf
+                @if (session('success'))
                 <div class="alert alert-success">
                     {{ session('success') }}
                 </div>
@@ -14,8 +16,6 @@
                     {{ session('error') }}
                 </div>
             @endif
-            <form action="{{route('login.new')}}" class="ml-auto mt-5" method="POST">
-                @csrf
                 <h1 class="">LOGIN</h1>
                 <div class="row">
                     <div class="form-group mt-2">

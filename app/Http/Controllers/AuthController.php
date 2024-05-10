@@ -12,7 +12,7 @@ class AuthController extends Controller
     {
         $request->validate([
             'email'=>'required|email',
-            'password'=>'required|sting'
+            'password'=>'required|string'
         ]);
 
         $user = User::where('email', $request->email)->first();
@@ -33,11 +33,11 @@ class AuthController extends Controller
     {
         $request->validate([
             'email'=>'required|email',
-            'fullname'=>'reuired|string|min:8',
+            'fullname'=>'required|string|min:8',
             'password'=>'required|string'
         ]);
         $newUser = new User;
-        $newUser->fullname=$request->fullname;
+        $newUser->name=$request->fullname;
         $newUser->email=$request->email;
         $newUser->password= password_hash($request->password, PASSWORD_DEFAULT);
         $newUser->save();

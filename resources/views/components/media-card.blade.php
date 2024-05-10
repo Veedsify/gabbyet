@@ -8,8 +8,11 @@
                             class="__cf_email__"
                             data-cfemail="36535b575f5a45575b465a5376535b575f5a1855595b">[email&#160;protected]</span></a>
                 </p>
+
                 @auth
-                    {{ auth()->user()->fullname }}
+                    <p class="text-white">
+                        {{ ucwords(auth()->user()->name) }}
+                    </p>
                 @endauth
                 @guest
                     <div class="gap-3 justify-content-end d-flex  ">

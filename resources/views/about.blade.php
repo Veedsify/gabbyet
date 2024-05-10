@@ -3,18 +3,18 @@
     </head>
 
     <body>
-        <x-media-card/>
+        <x-media-card />
 
         <x-nav-card />
 
-        <section class="hero-wrap hero-wrap-2" style="background-image: url({{asset('images/bg_3.jpg')}});"
+        <section class="hero-wrap hero-wrap-2" style="background-image: url({{ asset('images/bg_3.jpg') }});"
             data-stellar-background-ratio="0.5">
             <div class="overlay"></div>
             <div class="container">
                 <div class="row no-gutters slider-text align-items-end justify-content-center">
                     <div class="col-md-9 ftco-animate pb-5 text-center">
                         <h1 class="mb-3 bread">About Us</h1>
-                        <p class="breadcrumbs"><span class="mr-2"><a href="{{route('home')}}">Home <i
+                        <p class="breadcrumbs"><span class="mr-2"><a href="{{ route('home') }}">Home <i
                                         class="fa fa-chevron-right"></i></a></span> <span>About us <i
                                     class="fa fa-chevron-right"></i></span></p>
                     </div>
@@ -64,7 +64,8 @@
             <div class="container">
                 <div class="row no-gutters d-flex">
                     <div class="col-md-6 d-flex">
-                        <div class="img d-flex align-self-stretch" style="background-image:url({{asset('images/about.jpg')}});"></div>
+                        <div class="img d-flex align-self-stretch"
+                            style="background-image:url({{ asset('images/about.jpg') }});"></div>
                     </div>
                     <div class="col-md-6 p-3 pl-md-5 py-5 bg-primary">
                         <div class="row justify-content-start pb-3">
@@ -112,7 +113,8 @@
                 </div>
             </div>
         </section>
-        <section class="ftco-section ftco-no-pb testimony-section" style="background-image: url({{asset('images/bg_1.jpg')}});">
+        <section class="ftco-section ftco-no-pb testimony-section"
+            style="background-image: url({{ asset('images/bg_1.jpg') }});">
             <div class="overlay-1"></div>
             <div class="container-fluid">
                 <div class="row justify-content-center mb-5 pb-3">
@@ -125,7 +127,7 @@
                         <div class="carousel-testimony owl-carousel ftco-owl">
                             <div class="item">
                                 <div class="testimony-wrap d-flex align-items-stretch"
-                                    style="background-image: url({{asset('images/testimony-1.jpg')}});">
+                                    style="background-image: url({{ asset('images/testimony-1.jpg') }});">
                                     <div class="overlay"></div>
                                     <div class="text">
                                         <div class="line"></div>
@@ -138,7 +140,7 @@
                             </div>
                             <div class="item">
                                 <div class="testimony-wrap d-flex align-items-stretch"
-                                    style="background-image: url({{asset('images/testimony-2.jpg')}});">
+                                    style="background-image: url({{ asset('images/testimony-2.jpg') }});">
                                     <div class="overlay"></div>
                                     <div class="text">
                                         <div class="line"></div>
@@ -151,7 +153,7 @@
                             </div>
                             <div class="item">
                                 <div class="testimony-wrap d-flex align-items-stretch"
-                                    style="background-image: url({{asset('images/testimony-3.jpg')}});">
+                                    style="background-image: url({{ asset('images/testimony-3.jpg') }});">
                                     <div class="overlay"></div>
                                     <div class="text">
                                         <div class="line"></div>
@@ -164,7 +166,7 @@
                             </div>
                             <div class="item">
                                 <div class="testimony-wrap d-flex align-items-stretch"
-                                    style="background-image: url({{asset('images/testimony-4.jpg')}});">
+                                    style="background-image: url({{ asset('images/testimony-4.jpg') }});">
                                     <div class="overlay"></div>
                                     <div class="text">
                                         <div class="line"></div>
@@ -177,7 +179,7 @@
                             </div>
                             <div class="item">
                                 <div class="testimony-wrap d-flex align-items-stretch"
-                                    style="background-image: url({{asset('images/testimony-5.jpg')}});">
+                                    style="background-image: url({{ asset('images/testimony-5.jpg') }});">
                                     <div class="overlay"></div>
                                     <div class="text">
                                         <div class="line"></div>
@@ -198,11 +200,13 @@
                 <div class="row">
                     <div class="col-lg-6 order-md-last">
                         <div class="img img-video d-flex align-self-stretch align-items-center justify-content-center justify-content-md-center mb-4 mb-sm-0"
-                            style="background-image:url({{asset('images/about.jpg')}});">
+                            style="background-image:url({{ asset('images/about.jpg') }});">
                         </div>
                         <div class="d-flex mt-3">
-                            <div class="img img-2 mr-md-2 w-100" style="background-image:url({{asset('images/about-1.jpg')}});"></div>
-                            <div class="img img-2 ml-md-2 w-100" style="background-image:url({{asset('images/about-2.jpg')}});"></div>
+                            <div class="img img-2 mr-md-2 w-100"
+                                style="background-image:url({{ asset('images/about-1.jpg') }});"></div>
+                            <div class="img img-2 ml-md-2 w-100"
+                                style="background-image:url({{ asset('images/about-2.jpg') }});"></div>
                         </div>
                     </div>
                     <div class="col-lg-6">
@@ -308,5 +312,5 @@
                 </div>
             </div>
         </section>
-    <x-footer-card/>
-@endsectio
+        <x-footer-card />
+        @endsectio
